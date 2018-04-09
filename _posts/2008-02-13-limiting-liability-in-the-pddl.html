@@ -1,0 +1,46 @@
+---
+layout: post
+title: Limiting liability in the PDDL
+date: 2008-02-13 08:54:05.000000000 +01:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Legal
+- PDDL
+tags: []
+meta:
+  _wpcom_is_markdown: '1'
+author:
+  login: jordanhatcher
+  email: jordan.hatcher@okfn.org
+  display_name: jordanhatcher
+  first_name: ''
+  last_name: ''
+---
+<p>A comment via personal email and via the discuss list for the Open Data Commons set of legal tools. This is about the <a href="http://www.opendatacommons.org/odc-public-domain-dedication-and-licence/" title="PDDL">Public Domain Dedication &amp; Licence</a>:</p>
+<blockquote><p>Would it be possible to include <strong>an indemnification clause</strong> for misuse of data, for example when the data is passed on to a third person not bound by the license? The reason is that the disclaimer only binds the person downloading the data from the data source. If that person passes the data on to a third party, all warranty disclaimers become unenforceable because that third party did not agree to them (and the license is not passed on to the third party because it is not a “copyleft”-type license due to the public domain dedication). Are there any other legal instruments to protect the data provider against liability and lawsuits stemming from the data (imagine that the data has been modified down the road and is not accurate anymore)?</p></blockquote>
+<p>This is an interesting idea, and one that I suspect that attorneys reviewing the PDDL for use by a particular data provider will be interested  in  hearing more about. But just to be clear for all the readers, I'd like to give a few illustrations.</p>
+<p>An indemnification clause states that you will pay someone you have a relationship with for the claims of third parties. In the context of the PDDL and the above suggestion, an indemnification clause would be saying that anyone that got the information from the data provider under the PDDL would pay them if someone that the data recipient gave the database to turned around and sued the original provider.</p>
+<p>A=Database/data provider, offering data under the PDDL.</p>
+<p>B=Recipient of database/data from A under the PDDL.</p>
+<p>C=Any third party receiving the database/data from B.</p>
+<p>D=Another third party receiving the database/data from C (and so on from D to E to F...)</p>
+<p>A gives database/data to B under PDDL.  The Section 5 disclaimer and limitation of liability applies because B agreed to it (assuming that this disclaimer is valid in the relevant jurisdiction).</p>
+<p>B gives it to C without the text of the PDDL attached, which is permitted because the database/data is in the public domain. B hasn't agreed with A to the disclaimer in Section 5, and so it doesn't apply.</p>
+<p>C relies on the data, suffers damage because the data is inaccurate. C wants to sue A for providing bad data. An indemnification clause would mean that B pays A for costs/fees/damages/etc associated with the C vs A suit.</p>
+<p>There seem to be two primary questions here:</p>
+<ol>
+<li>Can C sue A and consequently what is the liability for A?</li>
+<li>Would an indemnification clause be a suitable means for protecting A?</li>
+</ol>
+<p><strong>1. C vs A and A's liability</strong></p>
+<p>This question requires a bit more research and thought on my end, so I won't comment too much. But from a practical standpoint,</p>
+<ul>
+<li>It seems like if you were presented with public domain data that you'd be pretty aware that the product is "AS IS" and that anyone could have modified it, and that it would be unreasonable to think otherwise.</li>
+<li>If C was wanting to make sure that they had the most up-to-date and clean data, then they'd come to A (assuming A is that provider) who would present it to them with the PDDL and its Section 5 disclaimer.</li>
+</ul>
+<p><strong>2. Would an indemnification clause be a suitable means for protecting A?</strong>You can in part avoid the first question by putting in an indemnification clause that says whatever liability is there for A (if any), B pays for it. While I think from a practical legal standpoint that something like this might be desirable, I'm not sure how this fits in with the norms of the Free and Open Source Software, and open content movements.  If the PDDL is too overreaching then many might reject it on philosophical grounds. I'm also not sure that an indemnification fits into the spirit, if not the letter, of the <a href="http://sciencecommons.org/projects/publishing/open-access-data-protocol/" title="SC Protocol">Science Commons protocol</a>.</p>
+<p>It will be interesting to see the discussion develop around the idea of liability. Please post your comments or join the discuss list to contribute.</p>
